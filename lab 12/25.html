@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>24bcsg15</title>
+</head>
+<body bgcolor="white" text="black">
+<script>
+let hr=17,amt;
+if(hr>=1&&hr<=8)
+amt=100;
+else if(hr>=9&&hr<=12)
+amt=100+(hr-8)*20;
+else if(hr>=13&&hr<=16)
+amt=180+(hr-12)*40;
+else if(hr>=17&&hr<=20)
+amt=340+(hr-16)*60;
+else if(hr>=21&&hr<=24)
+amt=580+(hr-20)*80;
+document.write("amount incurred by the worker="+amt);
+</script>
+</body> 
