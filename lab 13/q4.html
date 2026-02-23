@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>24bcsg15</title>
+<script>
+let numbers = [10, 5, 20, 8, 15];
+let sum = 0;
+let largest = numbers[0];
+let smallest = numbers[0];
+
+for (let i = 0; i < numbers.length; i++) {
+    sum += numbers[i];
+    if (numbers[i] > largest) largest = numbers[i];
+    if (numbers[i] < smallest) smallest = numbers[i];
+}
+
+let average = sum / numbers.length;
+
+document.write("Array:", numbers);
+document.write("Sum:", sum, "| Average:", average, "| Largest:", largest, "| Smallest:", smallest);
+</script>
+</head>
+<body bgcolor="black" text="red">
+</body>
+</html>

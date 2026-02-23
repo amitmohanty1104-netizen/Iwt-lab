@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>24bcsg15</title>
+</head>
+<body>
+<script>
+function isArmstrong(num) 
+{
+let digits = num.toString().split("");
+let power = digits.length;
+let sum = 0;
+for (let digit of digits) {
+sum += Math.pow(parseInt(digit), power);
+}
+return sum === num;
+}
+
+document.write("Is 153 an Armstrong number?", isArmstrong(153),"<br>");
+document.write("Is 123 an Armstrong number?", isArmstrong(123),"</br>");
+</script>
+</head>
+<body bgcolor="black" text="red">
+</body>
+</html>

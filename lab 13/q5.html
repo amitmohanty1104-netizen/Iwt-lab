@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>24bcsg15</title>
+<script>
+let arr = [12, 35, 1, 10, 34, 1];
+let first = -Infinity;
+let second = -Infinity;
+
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > first) {
+        second = first;
+        first = arr[i];
+    } else if (arr[i] > second && arr[i] !== first) {
+        second = arr[i];
+    }
+}
+
+document.write("Array:"+arr);
+document.write("Second Largest Element is:"+second);
+</script>
+</head>
+<body bgcolor="black" text="red">
+</body>
+</html>

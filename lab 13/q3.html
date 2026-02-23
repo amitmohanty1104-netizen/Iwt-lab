@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>24bcsg15</title>
+<script>
+let originalNum = 121;
+let tempNum = originalNum;
+let reversedNum = 0;
+while (tempNum > 0) {
+let digit = tempNum % 10;
+reversedNum = reversedNum * 10 + digit;
+tempNum = Math.floor(tempNum / 10);
+}
+if (originalNum == reversedNum) {
+document.write(originalNum, "is a palindrome");
+} else {
+document.write(originalNum, "is not a palindrome");
+}
+</script>
+</head>
+<body bgcolor="black" text="red">
+</body>
+</html>
